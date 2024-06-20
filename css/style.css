@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+/* サイドバー */
+.sidebar{
+  position:fixed;
+  left:-250px;
+  background:rgb(255, 255, 255);
+  width: 250px;
+  height: 100%;
+  transition: all 0.7s;
+}
+
+.sidebar header{
+  font-size: 22px;
+  color: black;
+  text-align: center;
+  line-height: 70px;
+  background:white;
+  user-select: none;
+}
+
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  color: black;
+  font-size: 20px;
+  padding-left: 40px;
+  transition: 0.7s;
+
+}
+
+.sidebar ul li:hover a{
+  padding-left: 50px;
+  color: #ff5c00;
+
+
+}
+
+
+/* フッダー */
+.footer{
+
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+/* 切り替え */
+#check{
+  display:none;
+}
+
+label #hambargerBtn,
+label #cancel{
+  position:absolute;
+  cursor:pointer;
+  background: white;
+  border-radius: 3px;
+}
+
+label #hambargerBtn{
+  left:40px;
+  top: 25px;
+  font-size: 25px;
+  color: black;
+  padding: 6px 12px;
+  transition: all 0.7s;
+}
+
+label #cancel{
+  z-index:10;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  color: black;
+  padding: 4px 9px;
+
+}
+
+#check:checked ~ .sidebar{
+  left:0;
+}
+
+#check:checked ~ label #hambargerBtn{
+  left: 250px;
+  opacity:0;
+  pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+  left: 195px;
+}
+
+.bg{
+  height:100vh;
+  background-image:url("../images/ex.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all 0.7s;
+  text-align: center;
+}
+
+.title {
+  padding-top: 200px;
+  letter-spacing: 0.6em;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+#check:checked ~ .bg{
+  margin-left: 250px;
+}
+
+
+/* about */
+
+.name{
+  margin-top: 25rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  letter-spacing: 0.7em;
+
+}
+
+
+
+.name p{
+  margin-bottom: 10px;
+}
+.name a{
+  letter-spacing: 0.5rem;
+  color: #3c3c3c;
+}
+.name h2{
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.about2{
+  margin-top: 10px;
+  margin-bottom: 40px;
+  letter-spacing: 0.5em;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+
+}
+
+
+/* クラス */
+
+.work p{
+  margin-top: 100px;
+  margin-bottom: 30px;
+
+}
+
+.work a{
+  font-size: 50px;
+  color: black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+
+}
+
+.workspace{
+  text-align: center;
+  padding-top: 200px;
+  letter-spacing: 0.5em;
+  padding-bottom: 300px;
+
+}
+.workspace ul li:hover a{
+  color: #ff5c00;
+  transition: 0.7s;
+  letter-spacing: 0.6em;
+}
+
+
+
+
+/* workclass */
+
+
+.classabout p{
+  margin-top: 100px;
+  margin-bottom: 30px;
+
+}
+
+
+.classabout{
+  margin-top: 25rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  letter-spacing: 0.7em;
+
+}
+
+/* about */
+
+.classabout p{
+  margin-bottom: 10px;
+}
+
+
+
+
+.class00{
+  text-align: center;
+  letter-spacing: 0.5em;
+  font-size: 14px;
+  padding-bottom: 60px;
+  margin-bottom: 100px;
+  display: block;
+}
+.class00 h1{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.class00 h2{
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+
+.class00 li{
+  color: #00407c;
+  padding-top: 30px;
+}
+
+
+.class00 img{
+  width: 500px;
+
+
+}
+
+
+.class01{
+  text-align: center;
+  letter-spacing: 0.5em;
+  font-size: 14px;
+  padding-bottom: 60px;
+  margin-bottom: 100px;
+}
+.class01 h1{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.class01 h2{
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+
+.class01 video{
+  margin-top: 30px;
+  width: 500px;
+}
+
+.class00 h4{
+  color: #ffb330;
+  font-weight: bold;
+}
+
+.class01 h4{
+  color: #ffb330;
+  font-weight: bold;
+}
+
+
+.setumei{
+
+  padding-top: 60px;
+
+
+}
+
+.setumei2{
+  padding-top: 60px;
+
+}
+
+.setumei3{
+  padding-top: 60px;
+
+}
+
+.workillustration{
+  margin-top: 25rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  letter-spacing: 0.7em;
+
+}
+
+
+/* クラス写真配置 */
+
+
+.class00img {
+  background-color: white;
+  width: 900px;
+  height: auto;
+  /* imgに効かせていたflex系プロパティをこっちにもってくる */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.sera img{
+  width: 400px;
+  margin-top: 60px;
+}
+
+.logo1 img{
+  width: 500px;
+  margin-top: 60px;
+
+}
+.logo2 img{
+  width: 100px;
+  margin-top: 60px;
+
+}
+
+
+
+
+.full img{
+  width:800px;
+}
+/* 画面遷移 */
+
+
+.class00 video{
+  margin-top: 40px;
+  width: 500px;
+}
+
+.name img{
+  width: 800px;
+  text-align: center;
+}
+
+
+/* ボタン */
+
+/*== 下線が伸びて背景に変わる　*/
+
+.btnlinestretches3{
+  /*線の基点とするためrelativeを指定*/
+position:relative;
+  /*ボタンの形状*/
+color:rgb(0, 0, 0);
+  padding: 10px 30px;
+  display:inline-block;
+  text-decoration: none;
+  outline: none;
+}
+
+/*テキストの設定*/
+.btnlinestretches3 span{
+  /*テキストを前面に出すためz-indexの値を高く設定*/
+position:relative;
+z-index: 2;
+}
+
+.btnlinestretches3:hover span{
+color: #fff;
+}
+
+/*線の設定*/
+.btnlinestretches3::after {
+content:'';
+  /*絶対配置で線の位置を決める*/
+position:absolute;
+z-index:1;
+bottom:0;
+left:0;
+  /*線の形状*/
+background:rgb(0, 0, 0);
+width:100%;
+height:3px;
+  /*アニメーションの指定*/
+transition:all 0.3s ease-in-out;
+}
+
+/*線が伸びて背景に*/
+.btnlinestretches3:hover::after {
+height:100%;
+}
+
+.botan{
+  text-align: center;
+  padding-top: 80px;
+}
+
+
+.title{
+  text-align: center;
+}
+
+
